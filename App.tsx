@@ -3,6 +3,7 @@ import { Language } from './types';
 import { CONTENT } from './constants';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
@@ -17,6 +18,7 @@ const App: React.FC = () => {
       
       <main>
         <Hero content={currentContent.hero} />
+        <About content={currentContent.about} />
         <Skills content={currentContent.skills} />
         <Experience contentExp={currentContent.experience} contentEdu={currentContent.education} />
         <Contact content={currentContent.contact} />

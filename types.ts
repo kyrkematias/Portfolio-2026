@@ -77,5 +77,13 @@ export interface ContentData {
     submit: string;
     sending: string;
     success: string;
+    errors: {
+      nameRequired: string;
+      nameShort: string;
+      emailRequired: string;
+      emailInvalid: string;
+      messageRequired: string;
+      messageShort: string;
+    };
   };
 }

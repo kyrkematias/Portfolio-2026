@@ -110,6 +110,14 @@ export const CONTENT: Record<Language, ContentData> = {
       submit: "Enviar Mensaje",
       sending: "Enviando...",
       success: "¡Mensaje enviado con éxito!",
+      errors: {
+        nameRequired: "El nombre es obligatorio",
+        nameShort: "El nombre debe tener al menos 2 caracteres",
+        emailRequired: "El correo es obligatorio",
+        emailInvalid: "Ingresa una dirección de correo válida",
+        messageRequired: "El mensaje es obligatorio",
+        messageShort: "El mensaje debe tener al menos 10 caracteres",
+      }
     },
   },
   en: {
@@ -220,6 +228,14 @@ export const CONTENT: Record<Language, ContentData> = {
       submit: "Send Message",
       sending: "Sending...",
       success: "Message sent successfully!",
+      errors: {
+        nameRequired: "Name is required",
+        nameShort: "Name must be at least 2 characters",
+        emailRequired: "Email is required",
+        emailInvalid: "Please enter a valid email address",
+        messageRequired: "Message is required",
+        messageShort: "Message must be at least 10 characters",
+      }
     },
   },
 };
