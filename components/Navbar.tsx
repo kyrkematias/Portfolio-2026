@@ -27,25 +27,24 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang, content }) => {
 
   const navLinks = [
     { name: content.about, href: '#about' },
-    { name: content.experience, href: '#experience' },
+    { name: content.projects, href: '#projects' },
     { name: content.skills, href: '#skills' },
     { name: content.contact, href: '#contact' },
   ];
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-[#0e0f1a]/80 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0e0f1a]/80 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0 cursor-pointer" onClick={() => window.scrollTo(0,0)}>
+          <div className="flex-shrink-0 cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
             <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-blue-500">
               MM.
             </span>
           </div>
-          
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navLinks.map((link) => (
@@ -66,7 +65,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, setLang, content }) => {
               </button>
             </div>
           </div>
-          
+
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}

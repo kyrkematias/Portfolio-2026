@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
-import { ContentData } from '../types';
+import { ContentData, Language } from '../types';
 
 interface HeroProps {
   content: ContentData['hero'];
+  lang: Language;
 }
 
-const Hero: React.FC<HeroProps> = ({ content }) => {
+const Hero: React.FC<HeroProps> = ({ content, lang }) => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Decor */}
@@ -15,8 +16,8 @@ const Hero: React.FC<HeroProps> = ({ content }) => {
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
-        
-        <motion.div 
+
+        <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -37,9 +38,9 @@ const Hero: React.FC<HeroProps> = ({ content }) => {
           <p className="text-gray-400 text-lg md:text-xl max-w-lg mx-auto md:mx-0 mb-8 leading-relaxed">
             {content.description}
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a 
+            <a
               href="#contact"
               className="group relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-medium text-white transition duration-300 ease-out border-2 border-pink-500 rounded-full shadow-md group"
             >
@@ -52,8 +53,9 @@ const Hero: React.FC<HeroProps> = ({ content }) => {
               <span className="relative invisible">{content.ctaPrimary}</span>
             </a>
 
-            <a 
-              href="#" // CV Link would go here
+            <a
+              href={lang === 'en' ? "/resume.pdf" : "/cv.pdf"}
+              download
               className="inline-flex items-center justify-center px-8 py-3 font-medium text-gray-300 transition duration-300 ease-out border border-gray-700 rounded-full hover:bg-white/5 hover:text-white"
             >
               <Download className="w-5 h-5 mr-2" />
@@ -62,30 +64,30 @@ const Hero: React.FC<HeroProps> = ({ content }) => {
           </div>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="w-full md:w-1/2 mt-12 md:mt-0 relative"
         >
-           <div className="relative w-72 h-72 md:w-96 md:h-96 mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-tr from-pink-500 to-blue-500 rounded-full opacity-20 animate-spin-slow" style={{ animationDuration: '10s' }}></div>
-              <div className="absolute inset-4 bg-[#0e0f1a] rounded-full z-10 flex items-center justify-center border border-white/10 overflow-hidden">
-                <img 
-                    src="https://picsum.photos/400/400?grayscale" 
-                    alt="Martín Matías" 
-                    className="w-full h-full object-cover opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-500"
-                />
-              </div>
-              
-              {/* Floating tech badges */}
-              <div className="absolute top-0 right-0 p-3 bg-[#1a1b26] rounded-xl border border-blue-500/30 shadow-lg shadow-blue-500/20 transform translate-x-4 -translate-y-4 z-20">
-                <span className="text-blue-400 font-bold">React</span>
-              </div>
-              <div className="absolute bottom-10 left-0 p-3 bg-[#1a1b26] rounded-xl border border-pink-500/30 shadow-lg shadow-pink-500/20 transform -translate-x-4 z-20">
-                <span className="text-pink-400 font-bold">SEO/SEM</span>
-              </div>
-           </div>
+          <div className="relative w-72 h-72 md:w-96 md:h-96 mx-auto">
+            <div className="absolute inset-0 bg-gradient-to-tr from-pink-500 to-blue-500 rounded-full opacity-20 animate-spin-slow" style={{ animationDuration: '10s' }}></div>
+            <div className="absolute inset-4 bg-[#0e0f1a] rounded-full z-10 flex items-center justify-center border border-white/10 overflow-hidden">
+              <img
+                src="img/Avatar.jpg"
+                alt="Martín Matías"
+                className="w-full h-full object-cover opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-500"
+              />
+            </div>
+
+            {/* Floating tech badges */}
+            <div className="absolute top-0 right-0 p-3 bg-[#1a1b26] rounded-xl border border-blue-500/30 shadow-lg shadow-blue-500/20 transform translate-x-4 -translate-y-4 z-20">
+              <span className="text-blue-400 font-bold">React</span>
+            </div>
+            <div className="absolute bottom-10 left-0 p-3 bg-[#1a1b26] rounded-xl border border-pink-500/30 shadow-lg shadow-pink-500/20 transform -translate-x-4 z-20">
+              <span className="text-pink-400 font-bold">SEO/SEM</span>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

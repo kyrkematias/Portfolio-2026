@@ -5,7 +5,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
-import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Education from './components/Education';
 import Contact from './components/Contact';
 
 const App: React.FC = () => {
@@ -15,12 +16,13 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen text-white selection:bg-pink-500/30 selection:text-pink-200">
       <Navbar lang={lang} setLang={setLang} content={currentContent.nav} />
-      
+
       <main>
-        <Hero content={currentContent.hero} />
+        <Hero content={currentContent.hero} lang={lang} />
         <About content={currentContent.about} />
         <Skills content={currentContent.skills} />
-        <Experience contentExp={currentContent.experience} contentEdu={currentContent.education} />
+        <Projects content={currentContent.projects} />
+        <Education content={currentContent.education} />
         <Contact content={currentContent.contact} />
       </main>
     </div>

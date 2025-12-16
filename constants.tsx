@@ -1,11 +1,10 @@
 import { ContentData, Language } from './types';
-import { Code, Layout, TrendingUp, Globe, Search, Database, Terminal, PenTool, BarChart } from 'lucide-react';
 
 export const CONTENT: Record<Language, ContentData> = {
   es: {
     nav: {
       about: "Sobre Mí",
-      experience: "Experiencia",
+      projects: "Proyectos",
       skills: "Habilidades",
       contact: "Contacto",
     },
@@ -29,52 +28,32 @@ export const CONTENT: Record<Language, ContentData> = {
         languages: "Idiomas",
       },
     },
-    experience: {
-      title: "Trayectoria Profesional",
+    projects: {
+      title: "Proyectos Freelance",
       items: [
         {
-          company: "Freelance / Proyectos Propios",
-          role: "Modificación Web React & Especialista SEO/SEM",
-          period: "Actualidad",
-          location: "Remoto",
-          description: [
-            "Modificación y finalización de sitios web de alquileres universitarios usando React.",
-            "Integración de Google Maps y Firebase para autenticación y geolocalización.",
-            "Diseño e implementación de estrategias SEO/SEM para el sector salud.",
-            "Desarrollo de funcionalidades con GraphQL y Hasura."
-          ]
+          title: "Plataforma de Alquileres Universitarios",
+          role: "Full Stack Developer",
+          description: "Desarrollo y adaptación de una plataforma web para conectar estudiantes con alojamientos. Implementación de autenticación segura y búsqueda geolocalizada.",
+          tech: ["React", "Firebase", "Google Maps API", "CSS Modules"],
         },
         {
-          company: "Metro Real State",
-          role: "Developer",
-          period: "Jun 2023 – Sep 2023",
-          location: "Remoto",
-          description: [
-            "Lideré la creación de apps en Python y React integrando IA para documentos estatales.",
-            "Dirigí el proceso de selección de talento IT y formé equipos eficientes.",
-            "Implementé metodologías ágiles para mejorar tiempos de entrega."
-          ]
+          title: "Estrategia SEO Sector Salud",
+          role: "SEO Specialist",
+          description: "Diseño e implementación de estrategias de posicionamiento orgánico y campañas SEM para clínicas y profesionales de la salud, logrando un aumento significativo en leads cualificados.",
+          tech: ["SEO Técnico", "Google Ads", "Analytics", "Auditoría Web"],
         },
         {
-          company: "Pervasive Mind",
-          role: "Data Entry / Analista SEO",
-          period: "Ago 2019 – Actualidad",
-          location: "Remoto",
-          description: [
-            "Optimización de estructura y contenido web para visibilidad en buscadores.",
-            "Homologación de datos para mejorar gestión de productos.",
-            "Análisis SEO para aumentar tráfico orgánico."
-          ]
+          title: "Sistema de Gestión Documental",
+          role: "Frontend Developer",
+          description: "Desarrollo de interfaz para sistema de gestión de documentos estatales, integrando servicios de inteligencia artificial para clasificación automática.",
+          tech: ["React", "Python", "AI Integration", "Agile"],
         },
         {
-          company: "Market One",
-          role: "Auditor / Relevador",
-          period: "Ago 2019 – Mar 2023",
-          location: "Tucumán",
-          description: [
-            "Recolección de info mediante encuestas y auditorías.",
-            "Mejora de exhibición de productos incrementando ventas."
-          ]
+          title: "Dashboard de Análisis SEO",
+          role: "Data Analyst",
+          description: "Creación de herramientas internas para el análisis de tráfico orgánico y optimización de estructura web, mejorando la visibilidad de múltiples sitios clientes.",
+          tech: ["Python", "Data Analysis", "SEO Tools", "Reporting"],
         }
       ]
     },
@@ -94,10 +73,16 @@ export const CONTENT: Record<Language, ContentData> = {
           location: "Online"
         },
         {
-          institution: "Escuela Normal Superior J.B. Alberdi",
-          degree: "Profesorado en Biología",
-          period: "2011 - 2013",
-          location: "Tucumán, AR"
+          institution: "Google Learn",
+          degree: "Fundamentos de Marketing Digital",
+          period: "Certificación",
+          location: "Online"
+        },
+        {
+          institution: "DeepLearning.ai",
+          degree: "Prompt Engineering for Developers",
+          period: "Certificación",
+          location: "Online"
         }
       ]
     },
@@ -123,7 +108,7 @@ export const CONTENT: Record<Language, ContentData> = {
   en: {
     nav: {
       about: "About",
-      experience: "Experience",
+      projects: "Projects",
       skills: "Skills",
       contact: "Contact",
     },
@@ -147,57 +132,37 @@ export const CONTENT: Record<Language, ContentData> = {
         languages: "Languages",
       },
     },
-    experience: {
-      title: "Professional Path",
+    projects: {
+      title: "Freelance Projects",
       items: [
         {
-          company: "Freelance / Personal Projects",
-          role: "React Web Dev & SEO/SEM Specialist",
-          period: "Present",
-          location: "Remote",
-          description: [
-            "Modification and completion of university rental websites using React.",
-            "Integration of Google Maps and Firebase for auth and geolocation.",
-            "Design and implementation of SEO/SEM strategies for the health sector.",
-            "Feature development using GraphQL and Hasura."
-          ]
+          title: "University Rental Platform",
+          role: "Full Stack Developer",
+          description: "Development and adaptation of a web platform connecting students with accommodation. Implemented secure authentication and geolocation search.",
+          tech: ["React", "Firebase", "Google Maps API", "CSS Modules"],
         },
         {
-          company: "Metro Real State",
-          role: "Developer",
-          period: "Jun 2023 – Sep 2023",
-          location: "Remote",
-          description: [
-            "Led creation of Python and React apps integrating AI for state documents.",
-            "Managed IT talent selection process and built efficient teams.",
-            "Implemented agile methodologies to improve delivery times."
-          ]
+          title: "Healthcare SEO Strategy",
+          role: "SEO Specialist",
+          description: "Design and implementation of organic positioning strategies and SEM campaigns for clinics and health professionals, achieving a significant increase in qualified leads.",
+          tech: ["Technical SEO", "Google Ads", "Analytics", "Web Audit"],
         },
         {
-          company: "Pervasive Mind",
-          role: "Data Entry / SEO Analyst",
-          period: "Aug 2019 – Present",
-          location: "Remote",
-          description: [
-            "Optimized web structure and content for search engine visibility.",
-            "Data standardization to improve product management.",
-            "SEO analysis to increase organic traffic."
-          ]
+          title: "Document Management System",
+          role: "Frontend Developer",
+          description: "Interface development for state document management system, integrating artificial intelligence services for automatic classification.",
+          tech: ["React", "Python", "AI Integration", "Agile"],
         },
         {
-          company: "Market One",
-          role: "Auditor / Surveyor",
-          period: "Aug 2019 – Mar 2023",
-          location: "Tucumán",
-          description: [
-            "Information gathering via surveys and audits.",
-            "Improved product display resulting in increased sales."
-          ]
+          title: "SEO Analysis Dashboard",
+          role: "Data Analyst",
+          description: "Creation of internal tools for organic traffic analysis and web structure optimization, improving visibility for multiple client sites.",
+          tech: ["Python", "Data Analysis", "SEO Tools", "Reporting"],
         }
       ]
     },
     education: {
-      title: "Education & Certifications",
+      title: "Education & Certificaciones",
       items: [
         {
           institution: "Google - Coursera",
@@ -212,10 +177,16 @@ export const CONTENT: Record<Language, ContentData> = {
           location: "Online"
         },
         {
-          institution: "Escuela Normal Superior J.B. Alberdi",
-          degree: "Biology Teaching Degree",
-          period: "2011 - 2013",
-          location: "Tucumán, AR"
+          institution: "Google Learn",
+          degree: "Digital Marketing Fundamentals",
+          period: "Certification",
+          location: "Online"
+        },
+        {
+          institution: "DeepLearning.ai",
+          degree: "Prompt Engineering for Developers",
+          period: "Certification",
+          location: "Online"
         }
       ]
     },

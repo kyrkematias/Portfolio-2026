@@ -18,12 +18,12 @@ export interface SkillCategory {
   skills: Skill[];
 }
 
-export interface ExperienceItem {
-  company: string;
+export interface Project {
+  title: string;
   role: string;
-  period: string;
-  location: string;
-  description: string[];
+  description: string;
+  tech: string[];
+  link?: string;
 }
 
 export interface EducationItem {
@@ -36,7 +36,7 @@ export interface EducationItem {
 export interface ContentData {
   nav: {
     about: string;
-    experience: string;
+    projects: string;
     skills: string;
     contact: string;
   };
@@ -60,9 +60,9 @@ export interface ContentData {
       languages: string;
     };
   };
-  experience: {
+  projects: {
     title: string;
-    items: ExperienceItem[];
+    items: Project[];
   };
   education: {
     title: string;
