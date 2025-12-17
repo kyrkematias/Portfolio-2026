@@ -7,6 +7,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Education from './components/Education';
+import Reviews from './components/Reviews';
 import Contact from './components/Contact';
 
 const App: React.FC = () => {
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <About content={currentContent.about} />
         <Skills content={currentContent.skills} />
         <Projects content={currentContent.projects} />
+        <Reviews content={currentContent.reviews} />
         <Education content={currentContent.education} />
         <Contact content={currentContent.contact} />
       </main>

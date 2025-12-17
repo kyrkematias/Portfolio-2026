@@ -33,6 +33,16 @@ export interface EducationItem {
   location: string;
 }
 
+export interface Review {
+  id: number;
+  name: string;
+  role: string;
+  company?: string;
+  image?: string;
+  text: string;
+  services: string[];
+}
+
 export interface ContentData {
   nav: {
     about: string;
@@ -67,6 +77,10 @@ export interface ContentData {
   education: {
     title: string;
     items: EducationItem[];
+  };
+  reviews: {
+    title: string;
+    items: Review[];
   };
   contact: {
     title: string;

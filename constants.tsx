@@ -86,6 +86,44 @@ export const CONTENT: Record<Language, ContentData> = {
         }
       ]
     },
+
+    reviews: {
+      title: "Lo que dicen mis clientes",
+      items: [
+        {
+          id: 1,
+          name: "Carlos Rodríguez",
+          role: "CEO",
+          company: "TechSolutions",
+          text: "Martín transformó completamente nuestra presencia online. Su enfoque en SEO técnico y UX resultó en un aumento del 40% en nuestras conversiones.",
+          services: ["SEO", "Desarrollo Web", "UX"]
+        },
+        {
+          id: 2,
+          name: "Ana García",
+          role: "Marketing Manager",
+          company: "EcoStore",
+          text: "Excelente profesional. Entendió perfectamente nuestra visión y la potenció con una estrategia de marketing digital impecable.",
+          services: ["Marketing", "SEM"]
+        },
+        {
+          id: 3,
+          name: "Javier López",
+          role: "Fundador",
+          company: "StartUp Lab",
+          text: "La capacidad de Martín para fusionar diseño y código es impresionante. La nueva landing page es rápida, hermosa y eficiente.",
+          services: ["Desarrollo Web", "Diseño UI"]
+        },
+        {
+          id: 4,
+          name: "Sofía Martínez",
+          role: "Directora Operativa",
+          company: "Global Services",
+          text: "Un socio estratégico clave. Nos ayudó a optimizar nuestros procesos internos con un dashboard a medida.",
+          services: ["Desarrollo Web", "Data Analysis"]
+        }
+      ]
+    },
     contact: {
       title: "Hablemos",
       subtitle: "¿Tienes un proyecto en mente? Transformemos tus ideas en realidad digital.",
@@ -187,6 +225,43 @@ export const CONTENT: Record<Language, ContentData> = {
           degree: "Prompt Engineering for Developers",
           period: "Certification",
           location: "Online"
+        }
+      ]
+    },
+    reviews: {
+      title: "What my clients say",
+      items: [
+        {
+          id: 1,
+          name: "Carlos Rodríguez",
+          role: "CEO",
+          company: "TechSolutions",
+          text: "Martín completely transformed our online presence. His focus on technical SEO and UX resulted in a 40% increase in conversions.",
+          services: ["SEO", "Web Development", "UX"]
+        },
+        {
+          id: 2,
+          name: "Ana García",
+          role: "Marketing Manager",
+          company: "EcoStore",
+          text: "Excellent professional. He perfectly understood our vision and enhanced it with a flawless digital marketing strategy.",
+          services: ["Marketing", "SEM"]
+        },
+        {
+          id: 3,
+          name: "Javier López",
+          role: "Founder",
+          company: "StartUp Lab",
+          text: "Martín's ability to merge design and code is impressive. The new landing page is fast, beautiful, and efficient.",
+          services: ["Web Development", "UI Design"]
+        },
+        {
+          id: 4,
+          name: "Sofía Martínez",
+          role: "COO",
+          company: "Global Services",
+          text: "A key strategic partner. He helped us optimize our internal processes with a custom dashboard.",
+          services: ["Web Development", "Data Analysis"]
         }
       ]
     },
