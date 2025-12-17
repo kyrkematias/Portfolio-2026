@@ -1,20 +1,73 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Martín Matías - Portfolio 2026
 
-# Run and deploy your AI Studio app
+![Portfolio Banner](https://via.placeholder.com/1200x400.png?text=Mart%C3%ADn+Mat%C3%ADas+Portfolio)
 
-This contains everything you need to run your app locally.
+> **Frontend Developer & SEO Specialist**
+> Merging technical development with SEO strategies and UX design to build high-impact digital experiences.
 
-View your app in AI Studio: https://ai.studio/apps/drive/187UZdz_mC3rGLSTZXF8RlcvLu0GPJ1zc
+## 🚀 Overview
 
-## Run Locally
+This is a modern, responsive personal portfolio website built to showcase my skills, projects, and professional experience. It features a sleek dark mode design with glassmorphism elements, smooth animations, and a focus on user experience.
 
-**Prerequisites:**  Node.js
+## 🛠️ Tech Stack
 
+-   **Core**: [React](https://react.dev/) (v19), [TypeScript](https://www.typescriptlang.org/)
+-   **Build Tool**: [Vite](https://vitejs.dev/)
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v4), CSS Variables
+-   **Animations**: [Framer Motion](https://www.framer.com/motion/)
+-   **Icons**: [Lucide React](https://lucide.dev/)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## ✨ Key Features
+
+-   **🎨 Dynamic UI**:
+    -   **Bento Grid Layout**: Asymmetric grid design for the Education section.
+    -   **Smart Color Tags**: Project technology pills automatically color-code based on the tech name (e.g., React=Blue, Python=Amber).
+    -   **Glassmorphism**: Translucent panels with background blur effects.
+-   **🌍 Internationalization**: Full support for English and Spanish (ES/EN toggle).
+-   **📱 Fully Responsive**: Mobile-first approach ensuring a great experience on all devices.
+-   **⚡ Performance**: Optimized Vite build with fast load times.
+
+## 📂 Project Structure
+
+```bash
+src/
+├── components/      # React components (Hero, Projects, Education, etc.)
+├── cv/              # Resume PDF files
+├── img/             # Static assets
+├── constants.tsx    # Content data (translations, project lists)
+├── types.ts         # TypeScript definitions
+├── App.tsx          # Main application layout
+└── index.css        # Global styles & Tailwind configuration
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+-   Node.js (v18 or higher)
+-   npm or yarn
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/kyrkematias/Portfolio-2026.git
+    cd Portfolio-2026
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open in browser**
+    Navigate to `http://localhost:5173` (or the port shown in your terminal).
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).

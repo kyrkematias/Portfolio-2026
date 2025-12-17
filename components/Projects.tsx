@@ -7,6 +7,38 @@ interface ProjectsProps {
     content: ContentData['projects'];
 }
 
+const getTechStyles = (tech: string) => {
+    const t = tech.toLowerCase();
+
+    // React / JS Frameworks -> Blue
+    if (t.includes('react') || t.includes('next') || t.includes('typescript') || t.includes('javascript')) {
+        return "text-blue-300 bg-blue-500/10 border-blue-500/20";
+    }
+
+    // Backend / Data -> Emerald/Teal
+    if (t.includes('node') || t.includes('database') || t.includes('data') || t.includes('sql') || t.includes('firebase')) {
+        return "text-emerald-300 bg-emerald-500/10 border-emerald-500/20";
+    }
+
+    // Python / AI -> Yellow/Amber
+    if (t.includes('python') || t.includes('ai ') || t.includes('artificial')) {
+        return "text-amber-300 bg-amber-500/10 border-amber-500/20";
+    }
+
+    // SEO / Marketing -> Purple
+    if (t.includes('seo') || t.includes('marketing') || t.includes('analytics') || t.includes('ads')) {
+        return "text-purple-300 bg-purple-500/10 border-purple-500/20";
+    }
+
+    // Design -> Pink
+    if (t.includes('css') || t.includes('design') || t.includes('ui') || t.includes('ux')) {
+        return "text-pink-300 bg-pink-500/10 border-pink-500/20";
+    }
+
+    // Default
+    return "text-gray-300 bg-white/5 border-white/10";
+};
+
 const Projects: React.FC<ProjectsProps> = ({ content }) => {
     return (
         <section id="projects" className="py-20 bg-[#0b0c15]">
@@ -52,7 +84,7 @@ const Projects: React.FC<ProjectsProps> = ({ content }) => {
 
                                 <div className="flex flex-wrap gap-2 mt-auto">
                                     {project.tech.map((tech, i) => (
-                                        <span key={i} className="px-3 py-1 text-xs font-medium text-gray-300 bg-white/5 rounded-full border border-white/5">
+                                        <span key={i} className={`px-3 py-1 text-xs font-medium rounded-full border ${getTechStyles(tech)} transition-colors`}>
                                             {tech}
                                         </span>
                                     ))}
@@ -61,7 +93,6 @@ const Projects: React.FC<ProjectsProps> = ({ content }) => {
                         </motion.div>
                     ))}
                 </div>
-
             </div>
         </section>
     );
