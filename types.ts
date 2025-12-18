@@ -31,6 +31,7 @@ export interface EducationItem {
   degree: string;
   period: string;
   location: string;
+  skills?: string[];
 }
 
 export interface Review {

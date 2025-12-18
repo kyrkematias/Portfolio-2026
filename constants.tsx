@@ -17,7 +17,7 @@ export const CONTENT: Record<Language, ContentData> = {
     },
     about: {
       title: "Sobre Mí",
-      text: "Apasionado por la tecnología y el marketing digital. Con experiencia diversa desde el desarrollo web hasta el análisis de datos y SEO, me enfoco en crear soluciones que no solo se vean bien, sino que funcionen y conviertan.",
+      text: "Apasionado por la tecnología y el marketing digital. Con experiencia diversa desde el desarrollo web, optimización de motores de búsqueda y diseño UX/UI, me enfoco en crear soluciones que no solo se vean bien, sino que funcionen y conviertan.",
     },
     skills: {
       title: "Arsenal Tecnológico",
@@ -64,19 +64,22 @@ export const CONTENT: Record<Language, ContentData> = {
           institution: "Google - Coursera",
           degree: "UX/UI & Product Design",
           period: "Certificación",
-          location: "Online"
+          location: "Online",
+          skills: ["Wireframing", "Prototyping", "Figma", "User Research"]
         },
         {
           institution: "ONE Oracle Next Education",
           degree: "Desarrollo Web Frontend",
           period: "Certificación",
-          location: "Online"
+          location: "Online",
+          skills: ["HTML5", "CSS3", "JavaScript", "React"]
         },
         {
           institution: "Google Learn",
           degree: "Fundamentos de Marketing Digital",
           period: "Certificación",
-          location: "Online"
+          location: "Online",
+          skills: ["SEO", "SEM", "Analytics", "E-commerce"]
         },
         {
           institution: "DeepLearning.ai",
@@ -206,19 +209,22 @@ export const CONTENT: Record<Language, ContentData> = {
           institution: "Google - Coursera",
           degree: "UX/UI & Product Design",
           period: "Certification",
-          location: "Online"
+          location: "Online",
+          skills: ["Wireframing", "Prototyping", "Figma", "User Research"]
         },
         {
           institution: "ONE Oracle Next Education",
           degree: "Frontend Web Development",
           period: "Certification",
-          location: "Online"
+          location: "Online",
+          skills: ["HTML5", "CSS3", "JavaScript", "React"]
         },
         {
           institution: "Google Learn",
           degree: "Digital Marketing Fundamentals",
           period: "Certification",
-          location: "Online"
+          location: "Online",
+          skills: ["SEO", "SEM", "Analytics", "E-commerce"]
         },
         {
           institution: "DeepLearning.ai",
